@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVE 2021</title>
+</head>
+<body>
+    <div class="shape">
+        <div class="shape-line"></div>
+    </div>
+    <div class="shape1">
+    </div>
+    <div class="shape1-right">
+        <div class="shape1-right-line"></div>
+    </div>
+    <div class="shape-triangle1"></div>
+    <div class="shape-triangle2"></div>
+    <div class="shape3"></div>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            background: #792eb3;
+            overflow: hidden;
+        }
+        html *,body *{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            box-sizing: border-box;
+        }
+        html *:before,html *:after,
+        body *:before,body *:after{
+            content: "";
+            position: absolute;
+        }
+        .shape{
+            width: 27.5vmin;
+            height: 13.5vmin;
+            background: #792eb3;
+            top: -18.5vmin;
+            left: -48vmin;
+            transform: rotate(30deg);
+            border: 4.5vmin solid #fff;
+            border-bottom: 0;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        }
+        .shape::before{
+            width: 4vmin;
+            height: 2vmin;
+            background: #792eb3;
+            top: 3.8vmin;
+            left: 1.4vmin;
+            transform: rotate(-30deg);
+            border: 4.3vmin solid #fff;
+            border-bottom: 0;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        }
+        .shape::after{
+            width: 4.5vmin;
+            height: 23.3vmin;
+            background: #fff;
+            top: 4.7vmin;
+            left: 10.5vmin;
+            transform: rotate(4deg) skewY(20deg);
+            border-radius: 0 3.8vmin 4vmin 0;
+            box-shadow: 7.5vmin -6vmin 0 0.01vmin #fff;
+        }
+        .shape-line{
+            width: 23.2vmin;
+            height: 4.2vmin;
+            background: #fff;
+            top: 38.3vmin;
+            left: 8.1vmin;
+            transform: rotate(-30deg) skewX(-32deg);
+        }
+        .shape1-right{
+            width: 27vmin;
+            height: 13.5vmin;
+            background: #792eb3;
+            top: -20vmin;
+            left: 26.5vmin;
+            border: 4.2vmin solid #fff;
+            border-bottom: 0;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        }
+        .shape1-right::before{
+            width: 4vmin;
+            height: 2vmin;
+            background: #792eb3;
+            top: 3.3vmin;
+            left: 2.9vmin;
+            border: 4.3vmin solid #fff;
+            border-bottom: 0;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        }
+        .shape1-right::after{
+            width: 6.75vmin;
+            height: 6.75vmin;
+            background: #792eb3;
+            top: 13.9vmin;
+            left: -5.3vmin;
+            border: 4.5vmin solid #fff;
+            border-left: 0;
+            border-radius: 0 100% 100% 0 / 50% 50% 50% 50%;
+        }
+        .shape1-right-line{
+            z-index: 3;
+            width: 4.7vmin;
+            height: 20.5vmin;
+            background: #fff;
+            top: 23vmin;
+            left: 0.3vmin;
+            transform: rotate(35deg) skewY(20deg);
+            border-radius: 0 3.8vmin 5vmin 0;
+        }
+        .shape1-right-line::before{
+            width: 3vmin;
+            height: 12vmin;
+            top: 14vmin;
+            left: 1.1vmin;
+            transform: rotate(30deg) skewX(15deg);
+            border-radius: 50%;
+            background: #fff;
+        }
+        .shape1-right-line::after{
+            width: 3vmin;
+            height: 8vmin;
+            background: #792eb3;
+            top: 14.5vmin;
+            left: -2.6vmin;
+            transform: rotate(53deg) skewX(45deg);
+            border-radius: 50%;
+            box-shadow: -2vmin 0 0 1vmin #792eb3;
+        }
+        .shape-triangle1{
+            width: 0;
+            height: 0;
+            border-left: 19.5vmin solid transparent;
+            border-bottom: 28.5vmin solid #fff;
+            top: 4.5vmin ;
+            left: 42vmin;
+        }
+        .shape-triangle1::before{
+            width: 0;
+            height: 0;
+            border-left: 7vmin solid transparent;
+            border-bottom: 10.5vmin solid #792eb3;
+            top: 13.8vmin;
+            left: -11.4vmin;
+        }
+        .shape-triangle2{
+            width: 4vmin;
+            height: 6vmin;
+            background: #fff;
+            top: -0.8vmin;
+            left: 47vmin;
+        }
+        .shape-triangle2::before{
+            width: 4vmin;
+            height: 6vmin;
+            background: #792eb3;
+            top: -0.8vmin;
+            left: -2.2vmin;
+            transform: rotate(52deg) skewX(15deg);
+            border-radius: 0 100% 0 0;
+        }
+        .shape1{
+            z-index: 4;
+            width: 17vmin;
+            height: 34vmin;
+            background: #792eb3;
+            top: 0.2vmin;
+            left: -19.6vmin;
+            border: 4.5vmin solid #fff;
+            border-right: 0;
+            border-radius: 100% 0 0 100% / 50% 50% 50% 50%;
+        }
+        .shape1::before{
+            width: 10vmin;
+            height: 10vmin;
+            background: #792eb3;
+            top: 3.4vmin;
+            left: 3vmin;
+            border: 4.2vmin solid #fff;
+            border-radius: 50%;
+        }
+        .shape3{
+            width: 4.5vmin;
+            height: 32vmin;
+            background: #fff;
+            top: 1vmin;
+            left: 72.4vmin;
+        }
+    </style>
+</body>
+</html>
